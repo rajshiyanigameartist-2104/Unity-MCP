@@ -1,0 +1,36 @@
+{
+  "levels": [
+    {
+      "levelId": 1,
+      "width": 8,
+      "height": 8,
+      "moveLimit": 24,
+      "seed": 101,
+      "goals": [
+        { "goalType": 0, "target": 3500, "tileType": 6 }
+      ]
+    },
+    {
+      "levelId": 2,
+      "width": 8,
+      "height": 8,
+      "moveLimit": 20,
+      "seed": 102,
+      "goals": [
+        { "goalType": 0, "target": 5000, "tileType": 6 },
+        { "goalType": 1, "target": 20, "tileType": 0 }
+      ]
+    },
+    {
+      "levelId": 3,
+      "width": 9,
+      "height": 9,
+      "moveLimit": 22,
+      "seed": 103,
+      "goals": [
+        { "goalType": 0, "target": 7000, "tileType": 6 },
+        { "goalType": 1, "target": 25, "tileType": 3 }
+      ]
+    }
+  ]
+}
