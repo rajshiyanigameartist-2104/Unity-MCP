@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match3 Web Playable</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Match-3 Web Demo</h1>
+      <div class="hud">
+        <span id="score">Score: 0</span>
+        <span id="moves">Moves: 25</span>
+        <button id="restart">Restart</button>
+      </div>
+    </header>
+    <canvas id="board" width="512" height="512"></canvas>
+    <p class="hint">Click/tap a tile, then click/tap an adjacent tile to swap.</p>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

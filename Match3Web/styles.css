@@ -1,0 +1,57 @@
+:root {
+  --bg: #131a2d;
+  --panel: #1f2944;
+  --text: #f4f7ff;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top, #24345d 0%, #121a2d 60%);
+  color: var(--text);
+}
+
+.app {
+  width: min(90vw, 620px);
+  margin: 20px auto;
+  background: color-mix(in oklab, var(--panel) 90%, black 10%);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 32px #0008;
+}
+
+header h1 {
+  margin: 4px 0 10px;
+  font-size: 1.4rem;
+}
+
+.hud {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#restart {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 700;
+  background: #57cc99;
+  color: #113;
+  cursor: pointer;
+}
+
+#board {
+  width: min(90vw, 512px);
+  height: min(90vw, 512px);
+  margin-top: 16px;
+  border-radius: 14px;
+  background: #0f172b;
+  display: block;
+}
+
+.hint {
+  opacity: 0.85;
+  font-size: 0.9rem;
+}
