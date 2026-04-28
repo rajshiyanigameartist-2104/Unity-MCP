@@ -50,3 +50,35 @@
 - Glossy candy finish (top-left specular, soft gradient).
 - FX: elastic eases, tiny overshoot on land, punchy pop for matches.
 - Special tiles should have unique, readable icons at small sizes.
+
+## Playable build + assets handoff
+
+I cannot directly host files from this environment, but you can generate a shareable playable link in ~5 minutes:
+
+1. In Unity, switch platform to **WebGL**.
+2. Open **File -> Build Settings -> WebGL -> Build** to `Build/WebGL`.
+3. Upload the build folder to one of:
+   - itch.io (recommended for quick private/public links)
+   - GitHub Pages (free static hosting)
+   - Netlify / Vercel static site
+4. Share the generated URL.
+
+### Asset checklist to include
+
+- 6 normal tile sprites (red/blue/green/yellow/purple/orange)
+- Rocket horizontal + rocket vertical icons
+- Bomb icon + color bomb icon
+- Match particle sprite sheet (or simple burst sprite)
+- Rocket trail particle material
+- Bomb shockwave sprite/material
+- UI atlas (buttons, panel backgrounds, popup frame)
+- Background image + optional vignette overlay
+- 6+ SFX clips (swap, match, rocket, bomb, color bomb, win)
+
+### Recommended asset specs (mobile-first)
+
+- Tiles/icons: 256x256 (or 512x512 if using high-DPI UI)
+- UI atlas: 2048x2048 max (split if needed)
+- Particles: 256x256 to 512x512 sprites
+- Texture compression: ASTC (Android), PVRTC/ASTC (iOS)
+- Audio: OGG for music, WAV/ADPCM for short SFX
